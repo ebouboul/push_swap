@@ -98,6 +98,7 @@ void	ft_sort_chunk(t_list **stack_a, t_list **stack_b, int *array, int p)
 	ft_push_to_a(stack_a, stack_b);
 }
 
+
 void	ft_sort(t_list **stack_a, t_list **stack_b)
 {
 	int	*array;

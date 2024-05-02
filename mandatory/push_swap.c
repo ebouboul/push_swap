@@ -60,8 +60,7 @@ int	main(int argc, char **argv)
 		return (ft_printf("Error\n"));
 	}
 	num_split = ft_split(numbers, ' ');
-	ft_printf("----->%s", num_split);
 	if (ft_split_to_node(num_split, 0, NULL, &stack_a))
 		ft_call_sort(&stack_a, &stack_b);
-	ft_free_all_ta3_all(numbers, num_split, &stack_a, &stack_b);
+	ft_free_all_all(numbers, num_split, &stack_a, &stack_b);
 }

@@ -12,7 +12,7 @@ int		ft_check_space(char *s);
 int		ft_check_num(t_list **lst, int num);
 int		ft_check(char *s);
 int		ft_check_arg(char *s);
-int		ft_free_all_ta3_all(char *numbers, char **num_split, t_list **stack_a,
+int		ft_free_all_all(char *numbers, char **num_split, t_list **stack_a,
 			t_list **stack_b);
 int		ft_check_null(int argc, char **argv);
 int		ft_check_spaces(char *argv);
