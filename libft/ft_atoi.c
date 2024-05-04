@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 13:58:18 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/12 09:31:08 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:22:38 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:22:39 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "libft.h"
 
@@ -40,8 +42,3 @@ long	ft_atoi(const char *str)
 	}
 	return (sign * result);
 }
-
-// int main ()
-// {
-// 	printf("%d\n", ft_atoi("9223372036854775809"));
-// }

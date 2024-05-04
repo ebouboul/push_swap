@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstsize_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/17 21:52:59 by amousaid          #+#    #+#             */
-/*   Updated: 2023/11/22 08:53:18 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:21:23 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:21:24 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "libft.h"
 

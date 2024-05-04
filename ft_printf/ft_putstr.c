@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/29 16:36:05 by amousaid          #+#    #+#             */
-/*   Updated: 2023/11/30 18:12:23 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:23:12 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:23:14 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "ft_printf.h"
 

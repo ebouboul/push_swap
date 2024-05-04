@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   array.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/19 15:21:40 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/25 19:28:05 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:19:59 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:20:00 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "push_swap.h"
 

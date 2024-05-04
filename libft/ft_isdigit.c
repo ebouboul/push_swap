@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/31 15:22:13 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/01 22:11:11 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:22:29 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:22:30 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 int	ft_isdigit(int c)
 {

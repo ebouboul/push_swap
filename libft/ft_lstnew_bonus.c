@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/16 15:09:47 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/03 23:07:43 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:21:28 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:21:29 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "libft.h"
 

@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/05 20:08:24 by amousaid          #+#    #+#             */
-/*   Updated: 2023/11/23 04:27:09 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:21:17 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:21:19 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 
@@ -101,11 +102,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (mini_split(s, ptr, c, x));
 }
-// int main()
-// {
-// 	const char *str = "(-1-808-784-7895)";
-// 	char **split_array = ft_split(str, '-');
-// 	int i = 0;
-// 	while(split_array[i])
-// 		printf("%s",split_array[i++]);
-// }

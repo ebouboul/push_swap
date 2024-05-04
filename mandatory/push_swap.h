@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/03 22:48:22 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/25 19:38:45 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:18:17 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:18:18 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #ifndef PUSH_SWAP_H
 # define PUSH_SWAP_H

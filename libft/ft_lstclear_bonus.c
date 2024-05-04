@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstclear_bonus.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/19 18:57:07 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/04 22:28:42 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:21:57 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:22:03 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "libft.h"
 
@@ -26,32 +28,3 @@ void	ft_lstclear(t_list **lst)
 	}
 	*lst = NULL;
 }
-// void del(void *content)
-// {
-//     free(content);
-//     content = NULL;
-// }
-// int main()
-// {
-
-//     char *pt1 = ft_strdup("test1");
-//     char *pt2 = ft_strdup("test2");
-//     char *pt3 = ft_strdup("test3");
-//     t_list *head = NULL;
-//     t_list *node1 = ft_lstnew(pt1);
-//     t_list *node2 = ft_lstnew(pt2);
-//     t_list *node3 = ft_lstnew(pt3);
-//     ft_lstadd_back(&head, node1);
-// 	ft_lstadd_back(&head, node2);
-// 	ft_lstadd_back(&head, node3);
-// 	printf("%s", (char *)head -> content);
-// 	printf("\n");
-//     printf("%s", (char *)head -> next -> content);
-// 	printf("\n");
-//     printf("%s", (char *)head -> next -> next -> content);
-// 	printf("\n");
-//     ft_lstclear(&head, del);
-//     printf("%s\n", (char *)head ->content);
-//     printf("%s\n", (char *)head -> next -> content);
-//     printf("%s\n", (char *)head -> next -> next -> content);
-// }

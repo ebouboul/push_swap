@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/09 23:52:27 by amousaid          #+#    #+#             */
-/*   Updated: 2023/11/22 08:52:47 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:20:34 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:20:37 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "libft.h"
 

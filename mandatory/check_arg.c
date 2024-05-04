@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   check_arg.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/06 21:47:33 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/23 15:20:19 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:19:48 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:19:49 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "push_swap.h"
 

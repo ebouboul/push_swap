@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/07 14:01:13 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/06 09:42:51 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:20:50 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:20:51 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "libft.h"
 

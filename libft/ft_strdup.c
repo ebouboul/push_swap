@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/06 22:10:25 by amousaid          #+#    #+#             */
-/*   Updated: 2023/11/22 08:50:41 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:20:56 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:20:57 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "libft.h"
 

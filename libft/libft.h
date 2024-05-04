@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/24 21:52:45 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/24 21:52:47 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:23:29 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:23:38 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #ifndef LIBFT_H
 # define LIBFT_H
@@ -23,7 +24,6 @@
 # include <string.h>
 # include <sys/types.h>
 # include <unistd.h>
-// #include <sys/siginfo.h>
 
 typedef struct s_list
 {

@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/17 22:55:22 by amousaid          #+#    #+#             */
-/*   Updated: 2023/11/22 08:55:37 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:22:21 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:22:22 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "libft.h"
 

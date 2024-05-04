@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/14 18:53:33 by amousaid          #+#    #+#             */
-/*   Updated: 2023/11/23 04:09:26 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:20:24 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:20:25 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "libft.h"
 

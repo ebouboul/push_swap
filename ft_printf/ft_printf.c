@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mousaid <mousaid@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/29 23:40:29 by amousaid          #+#    #+#             */
-/*   Updated: 2023/12/01 00:24:38 by mousaid          ###   ########.fr       */
+/*   Created: 2024/05/04 01:22:47 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:22:48 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "ft_printf.h"
 

@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   big_sort.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/22 23:51:19 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/23 01:20:00 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:19:53 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:19:54 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "push_swap.h"
 

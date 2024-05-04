@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   check_spaces.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/19 15:26:58 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/22 23:48:14 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:18:43 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:18:44 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "push_swap.h"
 

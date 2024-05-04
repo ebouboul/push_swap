@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   free_all.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/06 21:50:43 by amousaid          #+#    #+#             */
-/*   Updated: 2024/02/12 09:02:09 by amousaid         ###   ########.fr       */
+/*   Created: 2024/05/04 01:18:27 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:18:28 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "push_swap.h"
 

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+         #
+#    By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/02/02 00:12:14 by amousaid          #+#    #+#              #
-#    Updated: 2024/02/27 00:45:10 by amousaid         ###   ########.fr        #
+#    Created: 2024/05/04 01:20:12 by ebouboul          #+#    #+#              #
+#    Updated: 2024/05/04 01:20:16 by ebouboul         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

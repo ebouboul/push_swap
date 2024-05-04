@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mousaid <mousaid@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/29 16:35:25 by amousaid          #+#    #+#             */
-/*   Updated: 2023/12/01 00:28:11 by mousaid          ###   ########.fr       */
+/*   Created: 2024/05/04 01:23:07 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/04 01:23:08 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+
 
 #include "ft_printf.h"
 
