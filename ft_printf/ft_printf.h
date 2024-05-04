@@ -5,8 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
+<<<<<<< HEAD
 /*   Created: 2024/05/04 01:22:52 by ebouboul          #+#    #+#             */
 /*   Updated: 2024/05/04 01:22:53 by ebouboul         ###   ########.fr       */
+=======
+/*   Created: 2023/11/26 18:59:17 by ebouboul          #+#    #+#             */
+/*   Updated: 2023/11/26 21:38:18 by ebouboul         ###   ########.fr       */
+>>>>>>> 6d22e0b8a32efea8d23acd1c1f6198115f1ac3c7
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,22 +19,17 @@
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
-
-# include <fcntl.h>
-# include <limits.h>
 # include <stdarg.h>
-# include <stddef.h>
-# include <stdint.h>
-# include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
 
-int		ft_printf(const char *format, ...);
-void	ft_putchar_l(char c, int *sum);
-void	ft_putnbr_l(int n, int *sum);
-void	ft_putstr_l(char *s, int *sum);
-void	ft_puthex_l(size_t nb, char format, int *sum);
-void	ft_putunbr_l(unsigned int n, int *sum);
+int	ft_putchar_c(char c);
+int	ft_putstr_s(char *s);
+int	ft_putnbr_d(int nbr);
+int	ft_putpnt_p(unsigned long adr);
+int	ft_puthex_x(unsigned int nbr, int format);
+int	ft_putnbr_unsigned(unsigned int n);
+int	ft_printf(const char *input_str, ...);
 
 #endif

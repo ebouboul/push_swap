@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -9,6 +10,9 @@
 /*   Updated: 2024/05/03 22:09:00 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+=======
+
+>>>>>>> 6d22e0b8a32efea8d23acd1c1f6198115f1ac3c7
 
 
 
@@ -16,7 +20,8 @@
 
 void	ft_call_sort(t_list **stack_a, t_list **stack_b)
 {
-	if ((ft_lstsize(*stack_a) == 2) && (*stack_a)->value > (*stack_a)->next->value)
+	if (ft_lstsize(*stack_a) == 2
+		&& (*stack_a)->value > (*stack_a)->next->value)
 		ft_swap(stack_a, 'a');
 	else if (ft_lstsize(*stack_a) == 3)
 		ft_sort_3(stack_a);
@@ -71,9 +76,7 @@ int	main(int argc, char **argv)
 		return (ft_printf("Error\n"));
 	}
 	num_split = ft_split(numbers, ' ');
-	if (ft_split_to_node(num_split, 0, NULL, &stack_a) == 0)
+	if (ft_split_to_node(num_split, 0, NULL, &stack_a))
 		ft_call_sort(&stack_a, &stack_b);
-	ft_free_all_ta3_all(numbers, num_split, &stack_a, &stack_b);
+	ft_free_all_all(numbers, num_split, &stack_a, &stack_b);
 }
-
-

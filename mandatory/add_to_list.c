@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -9,6 +10,9 @@
 /*   Updated: 2024/05/04 01:20:06 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+=======
+
+>>>>>>> 6d22e0b8a32efea8d23acd1c1f6198115f1ac3c7
 
 
 
@@ -18,7 +22,7 @@ int	ft_check_sort1(t_list *stack_a)
 {
 	static int	*array;
 
-	array = ft_fill_aray(stack_a);
+	array = ft_fill_array(stack_a);
 	if (ft_check_array(array, ft_lstsize(stack_a)) == 1)
 	{
 		free(array);
@@ -52,6 +56,6 @@ int	ft_split_to_node(char **num_split, long tmp_num, t_list *tmp_node,
 		i++;
 	}
 	if (ft_check_sort1(*stack_a) == 0)
-		return (-1);
-	return (0);
+		return (0);
+	return (1);
 }

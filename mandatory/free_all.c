@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -9,6 +10,9 @@
 /*   Updated: 2024/05/04 01:18:28 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+=======
+
+>>>>>>> 6d22e0b8a32efea8d23acd1c1f6198115f1ac3c7
 
 
 
@@ -30,7 +34,7 @@ char	**ft_free_all(char **ptr)
 	return (NULL);
 }
 
-int	ft_free_all_ta3_all(char *numbers, char **num_split, t_list **stack_a,
+int	ft_free_all_all(char *numbers, char **num_split, t_list **stack_a,
 		t_list **stack_b)
 {
 	free(numbers);

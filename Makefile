@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
@@ -10,6 +11,8 @@
 #                                                                              #
 # **************************************************************************** #
 
+=======
+>>>>>>> 6d22e0b8a32efea8d23acd1c1f6198115f1ac3c7
 NAME = push_swap
 BONUS = checker
 CC = cc
@@ -18,7 +21,7 @@ LIBFT = ./libft/libft.a
 FT_PRINTF = ./ft_printf/libftprintf.a
 RM = rm -rf
 
-PUSH_SRC = ./mandatory/push_swap.c\
+PUSH_SRC =  ./mandatory/push_swap.c\
  			./mandatory/add_to_list.c\
 			./mandatory/check_arg.c\
 			./mandatory/free_all.c\
@@ -30,21 +33,7 @@ PUSH_SRC = ./mandatory/push_swap.c\
 			./mandatory/check_spaces.c\
 			./mandatory/big_sort.c\
 
-BONUS_SRC = ./bonus/checker.c\
-			./bonus/applic.c\
-			./bonus/check_all.c\
-			./bonus/get_next_line.c\
-			./bonus/get_next_line_utils.c\
-			./mandatory/add_to_list.c\
-			./mandatory/check_arg.c\
-			./mandatory/free_all.c\
-			./mandatory/swap.c\
-			./mandatory/push.c\
-			./mandatory/rotate.c\
-			./mandatory/sort_3_5.c\
-			./mandatory/array.c\
-			./mandatory/check_spaces.c\
-			./mandatory/big_sort.c\
+
 
 OBJ= $(PUSH_SRC:.c=.o)
 BOBJ= $(BONUS_SRC:.c=.o)
@@ -62,23 +51,23 @@ $(FT_PRINTF):
 		
 $(NAME): $(LIBFT) $(FT_PRINTF) $(OBJ) 
 	$(CC) $(CFLAGS) $(OBJ) $(LIBFT) $(FT_PRINTF) -o push_swap
-	@echo "DONE"
+	@echo "✅IS MAKE✅"
 
 $(BONUS): $(LIBFT) $(FT_PRINTF) $(BOBJ)
 	$(CC) $(CFLAGS) $(BOBJ) $(LIBFT) $(FT_PRINTF) -o checker
-	@echo "BONUS MADE"
+	@echo "✅BONUS✅"
 clean:
 	$(MAKE) clean --no-print-directory -C ./libft
 	$(MAKE) clean --no-print-directory -C ./ft_printf
 	$(RM) $(OBJ) $(BOBJ)
-	@echo "BAAAH"
+	@echo "🧹IS CLEAN🧹"
 
 fclean: clean
 	$(MAKE) fclean --no-print-directory -C ./libft
 	$(MAKE) fclean --no-print-directory -C ./ft_printf
 	$(RM) $(NAME)
 	$(RM) $(BONUS)
-	@echo "BAHHHHHHHHHHHHHHHH"
+	@echo "🧹IS FULL CLEAN🧹"
 
 re: fclean all
 

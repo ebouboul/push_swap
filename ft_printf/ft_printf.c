@@ -5,211 +5,66 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
+<<<<<<< HEAD
 /*   Created: 2024/05/04 01:22:47 by ebouboul          #+#    #+#             */
 /*   Updated: 2024/05/04 01:22:48 by ebouboul         ###   ########.fr       */
+=======
+/*   Created: 2023/11/26 21:56:06 by ebouboul          #+#    #+#             */
+/*   Updated: 2023/11/28 00:09:30 by ebouboul         ###   ########.fr       */
+>>>>>>> 6d22e0b8a32efea8d23acd1c1f6198115f1ac3c7
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "ft_printf.h"
 
-void	ft_print_format(char format, va_list arg, int *sum)
-{
-	void	*p;
+static int	check_format(const char *input_str, va_list params, int i);
 
-	if (format == 'c')
-		ft_putchar_l((va_arg(arg, int)), sum);
-	else if (format == 's')
-		ft_putstr_l((va_arg(arg, char *)), sum);
-	else if (format == 'd' || format == 'i')
-		ft_putnbr_l((va_arg(arg, int)), sum);
-	else if (format == 'x' || format == 'X')
-		ft_puthex_l((va_arg(arg, unsigned int)), format, sum);
-	else if (format == 'u')
-		ft_putunbr_l((va_arg(arg, unsigned int)), sum);
-	else if (format == '%')
-		ft_putchar_l('%', sum);
-	else if (format == 'p')
-	{
-		p = va_arg(arg, void *);
-		if (p == NULL)
-			ft_putstr_l("(nil)", sum);
-		else
-		{
-			ft_putstr_l("0x", sum);
-			ft_puthex_l((long long)p, 'x', sum);
-		}
-	}
-}
-
-int	ft_printf(const char *format, ...)
+int	ft_printf(const char *input_str, ...)
 {
-	va_list	arg;
-	int		sum;
+	va_list	params;
 	int		i;
+	int		count;
 
-	va_start(arg, format);
-	sum = 0;
+	va_start(params, input_str);
 	i = 0;
-	while (format[i])
+	count = 0;
+	while (input_str[i])
 	{
-		if (format[i] == '%')
-			ft_print_format(format[++i], arg, &sum);
+		if (input_str[i] == '%')
+		{
+			if (input_str[i + 1] == '\0')
+				return (count);
+			count += check_format(input_str, params, ++i);
+		}
 		else
-			ft_putchar_l(format[i], &sum);
+			count += ft_putchar_c(input_str[i]);
+		if (count < 0)
+			return (-1);
 		i++;
 	}
-	va_end(arg);
-	return (sum);
+	va_end(params);
+	return (count);
 }
 
-// #include <stdio.h>
+static int	check_format(const char *str, va_list par, int i)
+{
+	int	count;
 
-// // Your custom printf implementation
-
-// int main() {
-//     int num = -42;
-//     char ch = 'A';
-//     const char *str = "Hello, World!";
-//     int x;
-//     // Original printf
-//     printf("Original printf:");
-//     printf("\n");
-//     x = printf("Integer: %u", num);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x =printf("Character: %c", ch);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = printf("String: %s", str);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = printf("Hexadecimal: %x", num);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = printf("Hexadecimal: %X", num);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x= printf("adresse:  %p", NULL);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-
-//     // ft_printf
-
-//     printf("\nTesting ft_printf:");
-//     printf("\n");
-//     x = ft_printf("Integer: %u", num);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x =ft_printf("Character: %c", ch);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = ft_printf("String: %s", str);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = ft_printf("Hexadecimal: %x", num);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = ft_printf("Hexadecimal: %X", num);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x= ft_printf("adresse:  %p", NULL);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-
-//     return (0);
-// }
-// int main()
-// {
-//     int x;
-// x = printf(" NULL %s NULL ", NULL);
-// printf("\n");
-// printf("%d " , x);
-// printf("\n");
-// x = ft_printf(" NULL %s NULL ", NULL);
-// printf("\n");
-// printf("%d " , x);
-// printf("\n");
-// printf(" %x \n", LONG_MIN);
-// ft_printf("%x  \n", LONG_MIN);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = printf(" %p ", 1);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = printf(" %p ", 15);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = printf(" %p ", 16);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = printf(" %p ", 17);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = printf(" %p %p ", LONG_MIN, LONG_MAX);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = printf(" %p %p ", INT_MIN, INT_MAX);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = printf(" %p %p ", ULONG_MAX, -ULONG_MAX);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     printf("\n");
-//     printf("\n");
-//     printf("\n");
-//     printf("\n");
-//        x = ft_printf(" %p ", -1);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = ft_printf(" %p ", 1);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = ft_printf(" %p ", 15);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = ft_printf(" %p ", 16);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = ft_printf(" %p ", 17);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = ft_printf(" %p %p ", LONG_MIN, LONG_MAX);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = ft_printf(" %p %p ", INT_MIN, INT_MAX);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-//     x = ft_printf(" %p %p ", ULONG_MAX, -ULONG_MAX);
-//     printf("\n");
-//     printf("%d " , x);
-//     printf("\n");
-
-// }
+	count = 0;
+	if (str[i] == 'c')
+		count += ft_putchar_c(va_arg(par, int));
+	else if (str[i] == 's')
+		count += ft_putstr_s(va_arg(par, char *));
+	else if (str[i] == 'd' || str[i] == 'i')
+		count += ft_putnbr_d(va_arg(par, int));
+	else if (str[i] == 'u')
+		count += ft_putnbr_unsigned(va_arg(par, unsigned int));
+	else if (str[i] == 'x' || str[i] == 'X')
+		count += ft_puthex_x(va_arg(par, unsigned int), str[i]);
+	else if (str[i] == 'p')
+		count += ft_putpnt_p(va_arg(par, unsigned long));
+	else if (str[i] == '%')
+		count += ft_putchar_c('%');
+	return (count);
+}

@@ -1,28 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_putstr_s.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
+<<<<<<< HEAD:ft_printf/ft_putstr.c
 /*   Created: 2024/05/04 01:23:12 by ebouboul          #+#    #+#             */
 /*   Updated: 2024/05/04 01:23:14 by ebouboul         ###   ########.fr       */
+=======
+/*   Created: 2023/11/26 18:59:08 by ebouboul          #+#    #+#             */
+/*   Updated: 2023/11/26 21:59:53 by ebouboul         ###   ########.fr       */
+>>>>>>> 6d22e0b8a32efea8d23acd1c1f6198115f1ac3c7:ft_printf/ft_putstr_s.c
 /*                                                                            */
 /* ************************************************************************** */
 
 
 #include "ft_printf.h"
 
-void	ft_putstr_l(char *s, int *sum)
+int	ft_putstr_s(char *s)
 {
-	int	i;
+	int		i;
+	char	*d;
 
 	i = 0;
 	if (!s)
-		s = "(null)";
-	while (s[i])
 	{
-		ft_putchar_l(s[i], sum);
-		i++;
+		d = "(null)";
+		while (d[i])
+		{
+			if (ft_putchar_c(d[i]) == -1)
+				return (-1);
+			i++;
+		}
 	}
+	else
+	{
+		while (s[i])
+		{
+			ft_putchar_c(s[i]);
+			i++;
+		}
+	}
+	return (i);
 }

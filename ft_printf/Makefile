@@ -1,40 +1,28 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: amousaid <amousaid@student.42.fr>          +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/02/24 21:51:32 by amousaid          #+#    #+#              #
-#    Updated: 2024/02/24 21:51:33 by amousaid         ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
+src = ft_printf.c
+src_p = ft_printf.c ft_putchar_c.c ft_putstr_s.c ft_putnbr_d.c ft_putpnt_p.c ft_puthex_x.c ft_putnbr_u.c
+
+objs := $(src:%.c=%.o)
+objsp := $(src_p:%.c=%.o)
 
 NAME = libftprintf.a
-CC = cc
-CFLAGS = -Wall -Werror -Wextra
-RM = rm -f
-SRC = ft_printf.c ft_putchar.c ft_putstr.c ft_putnbr.c ft_puthex.c\
-      ft_putunbr.c
-		
-OBJS = $(SRC:.c=.o)
+cc = cc
+ccflags = -Wall -Wextra -Werror
+
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+%.o: %.c
+	$(cc) $(ccflags) -o $@ -c $<
 
-%.o : %.c
-	$(CC) $(CFLAGS) -c $< -o $@
-	ar -rc $(NAME) $@
+$(NAME): $(objs) $(objsp)
+	ar rcs $(NAME) $(objs) $(objsp)
 
 clean:
-	$(RM) $(OBJS)
+	rm -f $(objs) $(objsp)
 
 fclean: clean
-	$(RM) $(NAME)
+	rm -f $(NAME)
 
-re: fclean $(NAME)
-
-.PHONY: all clean fclean re
+re: fclean all
 
 .SILENT:

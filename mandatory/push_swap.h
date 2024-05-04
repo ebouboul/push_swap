@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -9,6 +10,8 @@
 /*   Updated: 2024/05/04 01:18:18 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+=======
+>>>>>>> 6d22e0b8a32efea8d23acd1c1f6198115f1ac3c7
 
 
 
@@ -25,7 +28,7 @@ int		ft_check_space(char *s);
 int		ft_check_num(t_list **lst, int num);
 int		ft_check(char *s);
 int		ft_check_arg(char *s);
-int		ft_free_all_ta3_all(char *numbers, char **num_split, t_list **stack_a,
+int		ft_free_all_all(char *numbers, char **num_split, t_list **stack_a,
 			t_list **stack_b);
 int		ft_check_null(int argc, char **argv);
 int		ft_check_spaces(char *argv);
@@ -48,7 +51,7 @@ void	ft_push_to_a(t_list **stack_a, t_list **stack_b);
 void	ft_sort_chunk(t_list **stack_a, t_list **stack_b, int *array, int p);
 void	ft_sort(t_list **stack_a, t_list **stack_b);
 // array
-int		*ft_fill_aray(t_list *stack);
+int		*ft_fill_array(t_list *stack);
 int		ft_check_array(int *array, int size_arr);
 void	ft_sort_array(int *array, int size_arr);
 

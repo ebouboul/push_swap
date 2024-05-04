@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -9,6 +10,9 @@
 /*   Updated: 2024/05/04 01:19:54 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+=======
+
+>>>>>>> 6d22e0b8a32efea8d23acd1c1f6198115f1ac3c7
 
 
 
@@ -110,11 +114,12 @@ void	ft_sort_chunk(t_list **stack_a, t_list **stack_b, int *array, int p)
 	ft_push_to_a(stack_a, stack_b);
 }
 
+
 void	ft_sort(t_list **stack_a, t_list **stack_b)
 {
 	int	*array;
 
-	array = ft_fill_aray(*stack_a);
+	array = ft_fill_array(*stack_a);
 	ft_sort_array(array, ft_lstsize(*stack_a));
 	if (ft_lstsize(*stack_a) < 400)
 		ft_sort_chunk(stack_a, stack_b, array, 15);
@@ -122,4 +127,3 @@ void	ft_sort(t_list **stack_a, t_list **stack_b)
 		ft_sort_chunk(stack_a, stack_b, array, 30);
 	free(array);
 }
-
