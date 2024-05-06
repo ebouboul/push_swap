@@ -19,7 +19,7 @@ LIBFT = ./libft/libft.a
 FT_PRINTF = ./ft_printf/libftprintf.a
 RM = rm -rf
 
-PUSH_SRC =  ./mandatory/push_swap.c\
+PUSH_SRC = ./mandatory/push_swap.c\
  			./mandatory/add_to_list.c\
 			./mandatory/check_arg.c\
 			./mandatory/free_all.c\
@@ -31,7 +31,17 @@ PUSH_SRC =  ./mandatory/push_swap.c\
 			./mandatory/check_spaces.c\
 			./mandatory/big_sort.c\
 
-
+BONUS_SRC = ./bonus/checker.c\
+			./bonus/get_next_line.c\
+			./bonus/get_next_line_utils.c\
+			./bonus/check_arg.c\
+			./bonus/free_all.c\
+			./bonus/swap.c\
+			./bonus/push.c\
+			./bonus/rotate.c\
+			./bonus/array.c\
+			./bonus/check_spaces.c\
+			./bonus/applicout.c\
 
 OBJ= $(PUSH_SRC:.c=.o)
 BOBJ= $(BONUS_SRC:.c=.o)
