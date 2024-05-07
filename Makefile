@@ -59,25 +59,18 @@ $(FT_PRINTF):
 		
 $(NAME): $(LIBFT) $(FT_PRINTF) $(OBJ) 
 	$(CC) $(CFLAGS) $(OBJ) $(LIBFT) $(FT_PRINTF) -o push_swap
-	@echo "✅MANDSTORY IS MAKED✅"
 
 $(BONUS): $(LIBFT) $(FT_PRINTF) $(BOBJ)
 	$(CC) $(CFLAGS) $(BOBJ) $(LIBFT) $(FT_PRINTF) -o checker
-	@echo "✅BONUS IS MIKED✅"
 clean:
 	$(MAKE) clean --no-print-directory -C ./libft
 	$(MAKE) clean --no-print-directory -C ./ft_printf
 	$(RM) $(OBJ) $(BOBJ)
-	@echo "🧹IT IS CLEAN🧹"
 
 fclean: clean
 	$(MAKE) fclean --no-print-directory -C ./libft
 	$(MAKE) fclean --no-print-directory -C ./ft_printf
 	$(RM) $(NAME)
 	$(RM) $(BONUS)
-	@echo "🧹IT IS FULL CLEAN🧹"
 
 re: fclean all
-
-.SILENT:
-.SECONDARY: $(OBJ) $(BOBJ) $(MAKE) clean --no-print-directory -C ./libft $(MAKE) clean --no-print-directory -C ./ft_printf

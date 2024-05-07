@@ -6,7 +6,7 @@
 /*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 17:35:41 by ebouboul          #+#    #+#             */
-/*   Updated: 2024/05/07 16:47:55 by ebouboul         ###   ########.fr       */
+/*   Updated: 2024/05/07 21:37:49 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,11 +46,12 @@ void	ft_valid(t_list *stack_a, t_list *stack_b)
 
 char	*ft_join_to_numbers(int argc, char **argv)
 {
-	static char	*numbers;
+	char		*numbers;
 	char		*tmp;
 	int			i;
 
 	i = 1;
+	numbers = NULL;
 	while (i < argc)
 	{
 		tmp = numbers;
@@ -62,8 +63,8 @@ char	*ft_join_to_numbers(int argc, char **argv)
 
 int	main(int argc, char **argv)
 {
-	static char	*numbers;
-	static char	**num_split;
+	char		*numbers;
+	char		**num_split;
 	t_list		*stack_a;
 	t_list		*stack_b;
 
