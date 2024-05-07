@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,11 +6,9 @@
 /*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 01:18:06 by ebouboul          #+#    #+#             */
-/*   Updated: 2024/05/04 01:18:07 by ebouboul         ###   ########.fr       */
+/*   Updated: 2024/05/07 16:31:07 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 #include "checker.h"
 
@@ -52,7 +49,6 @@ void	ft_rev_rotate(t_list **stack)
 		tmp2 = tmp2->next;
 	}
 	ft_lstadd_front(stack, tmp);
-
 }
 
 void	ft_rev_rotate_all(t_list **stack_a, t_list **stack_b)

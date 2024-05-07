@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,11 +6,9 @@
 /*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/04 01:19:53 by ebouboul          #+#    #+#             */
-/*   Updated: 2024/05/04 01:19:54 by ebouboul         ###   ########.fr       */
+/*   Updated: 2024/05/07 16:41:01 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
 
 #include "push_swap.h"
 
@@ -110,7 +107,6 @@ void	ft_sort_chunk(t_list **stack_a, t_list **stack_b, int *array, int p)
 	}
 	ft_push_to_a(stack_a, stack_b);
 }
-
 
 void	ft_sort(t_list **stack_a, t_list **stack_b)
 {

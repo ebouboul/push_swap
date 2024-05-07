@@ -6,10 +6,9 @@
 /*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/06 17:40:49 by ebouboul          #+#    #+#             */
-/*   Updated: 2024/05/06 23:37:42 by ebouboul         ###   ########.fr       */
+/*   Updated: 2024/05/07 16:48:17 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #ifndef CHECKER_H
 # define CHECKER_H
@@ -30,7 +29,7 @@ int		ft_free_all_all(char *numbers, char **num_split, t_list **stack_a,
 int		ft_check_null(int argc, char **argv);
 int		ft_check_spaces(char *argv);
 int		ft_check_full_space(int argc, char **argv);
-int	ft_check_sort(t_list *stack_a);
+int		ft_check_sort(t_list *stack_a);
 void	ft_valid(t_list *stack_a, t_list *stack_b);
 // sorting functions
 void	ft_swap(t_list **stack);
@@ -46,5 +45,6 @@ int		*ft_fill_array(t_list *stack);
 int		ft_check_array(int *array, int size_arr);
 void	ft_sort_array(int *array, int size_arr);
 
-void application(char *output, t_list **stack_a, t_list **stack_b);
+int		application(char *output, t_list **stack_a, t_list **stack_b);
+void	call_applic(t_list **stacka, t_list **stackb);
 #endif

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/06 18:37:06 by ebouboul          #+#    #+#             */
-/*   Updated: 2024/05/06 23:37:56 by ebouboul         ###   ########.fr       */
+/*   Created: 2024/05/06 17:06 by ebouboul          #+#    #+#             */
+/*   Updated: 2024/05/07 15:06:42 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,8 +35,9 @@ int	ft_split_to_node(char **num_split, long tmp_num, t_list *tmp_node,
 		ft_lstadd_back(stack_a, tmp_node);
 		i++;
 	}
-    return(0);
+	return (0);
 }
+
 int	ft_strcmp(const char *s1, const char *s2)
 {
 	int	i;
@@ -51,29 +52,53 @@ int	ft_strcmp(const char *s1, const char *s2)
 	return (0);
 }
 
-void application(char *output, t_list **stack_a, t_list **stack_b)
+void	call_applic(t_list **stacka, t_list **stackb)
 {
-        if(ft_strcmp(output, "sa\n") == 0)
-            ft_swap(stack_a);
-        else if(ft_strcmp(output, "sb\n") == 0)
-            ft_swap(stack_b);
-        else if(ft_strcmp(output, "ss\n") == 0)
-            ft_swap_all(stack_a, stack_b);
-        else if(ft_strcmp(output, "pb\n") == 0)
-            ft_push(stack_a, stack_b);
-        else if(ft_strcmp(output, "pa\n") == 0)
-            ft_push(stack_a, stack_b);
-        else if(ft_strcmp(output, "ra\n") == 0)
-            ft_rotate(stack_a);
-        else if(ft_strcmp(output, "rb\n") == 0)
-            ft_rotate(stack_b);
-        else if(ft_strcmp(output, "rr\n") == 0)
-            ft_rotate_all(stack_a, stack_b);
-        else if(ft_strcmp(output, "rra\n") == 0)
-            ft_rev_rotate(stack_a);
-        else if(ft_strcmp(output, "rrb\n") == 0)
-            ft_rev_rotate(stack_b);
-        else if(ft_strcmp(output, "rrr\n") == 0)
-            ft_rev_rotate_all(stack_a, stack_b);
+	char	*output;
+
+	output = get_next_line(0);
+	while (output)
+	{
+		if (application(output, stacka, stackb) == 1)
+		{
+			free(output);
+			output = get_next_line(0);
+		}
+		else
+		{
+			free(output);
+			ft_printf("Error\n");
+			exit(0);
+		}
+	}
+	free(output);
 }
 
+int	application(char *output, t_list **stack_a, t_list **stack_b)
+{
+	if (ft_strcmp(output, "sa\n") == 0)
+		ft_swap(stack_a);
+	else if (ft_strcmp(output, "sb\n") == 0)
+		ft_swap(stack_b);
+	else if (ft_strcmp(output, "ss\n") == 0)
+		ft_swap_all(stack_a, stack_b);
+	else if (ft_strcmp(output, "ra\n") == 0)
+		ft_rotate(stack_a);
+	else if (ft_strcmp(output, "rb\n") == 0)
+		ft_rotate(stack_b);
+	else if (ft_strcmp(output, "rr\n") == 0)
+		ft_rotate_all(stack_a, stack_b);
+	else if (ft_strcmp(output, "rra\n") == 0)
+		ft_rev_rotate(stack_a);
+	else if (ft_strcmp(output, "rrb\n") == 0)
+		ft_rev_rotate(stack_b);
+	else if (ft_strcmp(output, "rrr\n") == 0)
+		ft_rev_rotate_all(stack_a, stack_b);
+	else if (ft_strcmp(output, "pa\n") == 0)
+		ft_push(stack_b, stack_a);
+	else if (ft_strcmp(output, "pb\n") == 0)
+		ft_push(stack_a, stack_b);
+	else
+		return (0);
+	return (1);
+}

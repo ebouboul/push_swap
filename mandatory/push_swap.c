@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -7,12 +6,9 @@
 /*   By: ebouboul <ebouboul@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/03 22:08:59 by ebouboul          #+#    #+#             */
-/*   Updated: 2024/05/03 22:09:00 by ebouboul         ###   ########.fr       */
+/*   Updated: 2024/05/07 16:40:35 by ebouboul         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-
-
 
 #include "push_swap.h"
 
@@ -74,7 +70,7 @@ int	main(int argc, char **argv)
 		return (ft_printf("Error\n"));
 	}
 	num_split = ft_split(numbers, ' ');
-	if (ft_split_to_node(num_split, 0, NULL, &stack_a))
+	if (ft_split_to_node(num_split, 0, NULL, &stack_a) == 1)
 		ft_call_sort(&stack_a, &stack_b);
 	ft_free_all_all(numbers, num_split, &stack_a, &stack_b);
 }
